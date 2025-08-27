@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ExemploArrayListOrdenacao {
+    public static void main(String[] args) {
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        numeros.add(42);
+        numeros.add(7);
+        numeros.add(13);
+        numeros.add(99);
+        numeros.add(1);
+
+        System.out.println("Original: " + numeros);
+
+        // Ordenar crescente
+        Collections.sort(numeros);
+        System.out.println("Ordenado crescente: " + numeros);
+
+        // Ordenar decrescente
+        Collections.sort(numeros, Collections.reverseOrder());
+        System.out.println("Ordenado decrescente: " + numeros);
+    }
+}
